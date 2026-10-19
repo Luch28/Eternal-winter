@@ -8,3 +8,5 @@ Keep your temperature up by placing campfires or torches—but watch out, as bot
 So you can set up your own server to play with friends. 
 
 Or you can just join mine: ```Example```
+
+### I am developing this on my own.
