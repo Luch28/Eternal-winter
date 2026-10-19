@@ -185,6 +185,7 @@ public abstract class Minecraft
         catch(Exception exception1) { }
         checkGLError("Post startup");
         ingameGUI = new GuiIngame(this);
+        net.minecraft.src.eternal_winter.Eternal_winter.init();
         if(serverName != null)
         {
             displayGuiScreen(new GuiConnecting(this, serverName, serverPort));

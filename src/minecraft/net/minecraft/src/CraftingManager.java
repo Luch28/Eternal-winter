@@ -208,7 +208,7 @@ public class CraftingManager
         System.out.println((new StringBuilder()).append(recipes.size()).append(" recipes").toString());
     }
 
-    void addRecipe(ItemStack itemstack, Object aobj[])
+    public void addRecipe(ItemStack itemstack, Object aobj[])
     {
         String s = "";
         int i = 0;
