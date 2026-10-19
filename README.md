@@ -9,4 +9,4 @@ So you can set up your own server to play with friends.
 
 Or you can just join mine: ```Example```
 
-### I am developing this on my own.
+### I am developing this on my own
