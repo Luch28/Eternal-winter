@@ -34,7 +34,13 @@ public class RenderPlayer extends RenderLiving
             if(item instanceof ItemArmor)
             {
                 ItemArmor itemarmor = (ItemArmor)item;
-                loadTexture((new StringBuilder()).append("/armor/").append(armorFilenamePrefix[itemarmor.renderIndex]).append("_").append(i != 2 ? 1 : 2).append(".png").toString());
+                String armorTexture;
+                if (itemarmor instanceof net.minecraft.src.eternal_winter.items.WarmArmor) {
+                    armorTexture = "/armor/warmArmor_" + (i != 2 ? 1 : 2) + ".png";
+                } else {
+                    armorTexture = (new StringBuilder()).append("/armor/").append(armorFilenamePrefix[itemarmor.renderIndex]).append("_").append(i != 2 ? 1 : 2).append(".png").toString();
+                }
+                loadTexture(armorTexture);
                 ModelBiped modelbiped = i != 2 ? modelArmorChestplate : modelArmor;
                 modelbiped.bipedHead.showModel = i == 0;
                 modelbiped.bipedHeadwear.showModel = i == 0;

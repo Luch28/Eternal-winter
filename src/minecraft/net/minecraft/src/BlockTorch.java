@@ -94,6 +94,14 @@ public class BlockTorch extends Block
     public void updateTick(World world, int i, int j, int k, Random random)
     {
         super.updateTick(world, i, j, k, random);
+        if(!world.multiplayerWorld)
+        {
+            int meta = world.getBlockMetadata(i, j, k);
+            if(world.getBlockId(i, j, k) == this.blockID)
+            {
+                world.setBlockAndMetadataWithNotify(i, j, k, 200, meta & 7);
+            }
+        }
         if(world.getBlockMetadata(i, j, k) == 0)
         {
             onBlockAdded(world, i, j, k);
@@ -121,6 +129,10 @@ public class BlockTorch extends Block
         if(func_31032_h(world, i, j - 1, k))
         {
             world.setBlockMetadataWithNotify(i, j, k, 5);
+        }
+        if(!world.multiplayerWorld)
+        {
+            world.scheduleBlockUpdate(i, j, k, this.blockID, 18600);
         }
         dropTorchIfCantStay(world, i, j, k);
     }

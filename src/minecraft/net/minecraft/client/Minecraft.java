@@ -952,6 +952,9 @@ public abstract class Minecraft
 
     public void runTick()
     {
+    	if (this.theWorld != null) {
+            net.minecraft.src.eternal_winter.Eternal_winter.tick(this.theWorld);
+        }
         if(ticksRan == 6000)
         {
             func_28001_B();

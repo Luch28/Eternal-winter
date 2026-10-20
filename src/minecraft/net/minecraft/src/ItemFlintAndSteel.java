@@ -22,6 +22,19 @@ public class ItemFlintAndSteel extends Item
 
     public boolean onItemUse(ItemStack itemstack, EntityPlayer entityplayer, World world, int i, int j, int k, int l)
     {
+        if(world.getBlockId(i, j, k) == 200)
+        {
+            if(!world.multiplayerWorld)
+            {
+                int meta = world.getBlockMetadata(i, j, k);
+                world.setBlockAndMetadataWithNotify(i, j, k, Block.torchWood.blockID, meta & 7);
+                world.scheduleBlockUpdate(i, j, k, Block.torchWood.blockID, 18600);
+            }
+            itemstack.damageItem(1, entityplayer);
+            world.playSoundEffect((double)i + 0.5D, (double)j + 0.5D, (double)k + 0.5D, "fire.ignite", 1.0F, itemRand.nextFloat() * 0.4F + 0.8F);
+            return true;
+        }
+
         if(l == 0)
         {
             j--;

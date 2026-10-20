@@ -274,6 +274,32 @@ public class GuiIngame extends Gui
         GL11.glPopMatrix();
         GL11.glEnable(3008 /*GL_ALPHA_TEST*/);
         GL11.glDisable(3042 /*GL_BLEND*/);
+        
+        net.minecraft.src.World world = this.mc.theWorld;
+        if (world != null) {
+            int scale = this.mc.gameSettings.guiScale;
+            if (scale == 0) scale = 1000;
+            int scaleFactor = 1;
+            while (scaleFactor < scale && this.mc.displayWidth / (scaleFactor + 1) >= 320 && this.mc.displayHeight / (scaleFactor + 1) >= 240) {
+                scaleFactor++;
+            }
+            int screenWidth = this.mc.displayWidth / scaleFactor;
+            int screenHeight = this.mc.displayHeight / scaleFactor;
+
+            String envText = net.minecraft.src.eternal_winter.utils.To_display.getEnvTempText();
+            this.mc.fontRenderer.drawString(envText, 2, 2, 0xFFFFFF);
+            
+            String daysText = net.minecraft.src.eternal_winter.utils.To_display.getDaysText(world);
+            this.mc.fontRenderer.drawString(daysText, 2, 12, 0xFFFFFF);
+            
+            String timeText = net.minecraft.src.eternal_winter.utils.To_display.getTime(world);
+            int timeX = (screenWidth - this.mc.fontRenderer.getStringWidth(timeText)) / 2;
+            this.mc.fontRenderer.drawString(timeText, timeX, 2, 0xFFFFFF);
+
+            String bodyText = net.minecraft.src.eternal_winter.utils.To_display.getBodyTempText();
+            int bodyX = (screenWidth - this.mc.fontRenderer.getStringWidth(bodyText)) / 2;
+            this.mc.fontRenderer.drawString(bodyText, bodyX, screenHeight - 30, 0xFFFFFF);
+        }
     }
 
     private void renderPumpkinBlur(int i, int j)

@@ -8,11 +8,10 @@ import net.minecraft.src.Item;
 public class Recipes {
     public static void init() {
         CraftingManager.getInstance().addRecipe(
-            new ItemStack(Blocks.glassTrapDoor, 2),
+            new ItemStack(Block.torchWood, 2),
             new Object[] {
-                "GGG",
-                "GGG",
-                Character.valueOf('G'), Block.glass
+                "T",
+                Character.valueOf('T'), Block.dirt
             }
         );
     }
