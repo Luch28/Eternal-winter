@@ -10,6 +10,8 @@ So you can set up your own server to play with friends.
 Or you can just join mine: ```87.255.8.205:25575```
 
 <img width="400" alt="2026-10-20_05 08 41" src="https://github.com/user-attachments/assets/c16c7778-b729-4782-8d8a-b3a346535650" />
+<img width="400" alt="2026-10-21_00 02 23" src="https://github.com/user-attachments/assets/113935bb-fd0e-4691-8d4a-cb5aca96c315" />
+
 
 ## features: 
 1. blizzard
