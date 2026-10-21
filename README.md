@@ -11,5 +11,9 @@ Or you can just join mine: ```Example```
 
 <img width="400" alt="2026-10-20_05 08 41" src="https://github.com/user-attachments/assets/c16c7778-b729-4782-8d8a-b3a346535650" />
 
+## features: 
+1. blizzard
+2. freezing
+3. extinguishing torches
 
 ### I am developing this on my own
