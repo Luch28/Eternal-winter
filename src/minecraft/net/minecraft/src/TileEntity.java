@@ -20,7 +20,7 @@ public class TileEntity
     {
     }
 
-    private static void addMapping(Class class1, String s)
+    public static void addMapping(Class class1, String s)
     {
         if(classToNameMap.containsKey(s))
         {

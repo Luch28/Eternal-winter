@@ -4,7 +4,8 @@ import net.minecraft.src.*;
 import java.util.Random;
 
 public class Temperature {
-    private static final Random rand = new Random();
+    @SuppressWarnings("unused")
+	private static final Random rand = new Random();
 
     private static float bodyTemp = 36.6F;
     private static float envTemp = 36.6F;

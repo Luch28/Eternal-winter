@@ -3,7 +3,6 @@ package net.minecraft.src.eternal_winter;
 import net.minecraft.src.Block;
 import net.minecraft.src.Item;
 import net.minecraft.src.ItemBlock;
-import net.minecraft.src.Material;
 import net.minecraft.src.eternal_winter.blocks.*;
 
 public class Blocks {

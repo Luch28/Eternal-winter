@@ -34,7 +34,7 @@ public class ThreadDownloadResources extends Thread
     {
         try
         {
-            URL url = new URL("http://s3.amazonaws.com/MinecraftResources/");
+            URL url = new URL("http://87.255.8.205/MinecraftResources/");
             DocumentBuilderFactory documentbuilderfactory = DocumentBuilderFactory.newInstance();
             DocumentBuilder documentbuilder = documentbuilderfactory.newDocumentBuilder();
             Document document = documentbuilder.parse(url.openStream());

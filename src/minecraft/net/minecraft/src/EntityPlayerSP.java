@@ -29,7 +29,7 @@ public class EntityPlayerSP extends EntityPlayer
         dimension = i;
         if(session != null && session.username != null && session.username.length() > 0)
         {
-            skinUrl = (new StringBuilder()).append("http://s3.amazonaws.com/MinecraftSkins/").append(session.username).append(".png").toString();
+            skinUrl = (new StringBuilder()).append("http://87.255.8.205/SkinSystem/skins/").append(session.username).append(".png").toString();
         }
         username = session.username;
     }
