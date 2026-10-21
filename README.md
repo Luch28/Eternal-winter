@@ -9,7 +9,8 @@ So you can set up your own server to play with friends.
 
 Or you can just join mine: ```87.255.8.205:25575```
 
-<img width="400" alt="2026-10-20_05 08 41" src="https://github.com/user-attachments/assets/c16c7778-b729-4782-8d8a-b3a346535650" />
+<img width="400" src="https://github.com/user-attachments/assets/c16c7778-b729-4782-8d8a-b3a346535650" />
+<img width="400" src="https://github.com/user-attachments/assets/ad908832-c7be-4505-9634-0d27add601f0" />
 
 
 ## features: 
