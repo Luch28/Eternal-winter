@@ -23,3 +23,4 @@ Or you can just join mine: ```87.255.8.205:25575```
 **Java: 6**
 
 ### I am developing this on my own
+**The first release will be in November**
