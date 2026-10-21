@@ -15,5 +15,7 @@ Or you can just join mine: ```Example```
 1. blizzard
 2. freezing
 3. extinguishing torches
+4. Warm armor
+5. Day counter
 
 ### I am developing this on my own
